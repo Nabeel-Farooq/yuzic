@@ -1,0 +1,708 @@
+{
+  "settings": {
+    "title": "Paramètres",
+    "sections": {
+      "general": "Général",
+      "plugins": "Extensions",
+      "connections": "Connexions",
+      "integrations": "Intégrations",
+      "downloaders": "Téléchargeurs",
+      "about": "À propos"
+    },
+    "rows": {
+      "server": "Serveur",
+      "library": "Bibliothèque",
+      "player": "Lecture",
+      "appearance": "Apparence",
+      "scrobbling": "Scrobbling",
+      "downloaders": "Téléchargements",
+      "listenBrainz": "ListenBrainz",
+      "github": "Github",
+      "privacyPolicy": "Politique de confidentialité",
+      "termsOfUse": "Conditions d'utilisation",
+      "version": "Version"
+    },
+    "profile": {
+      "unknownUser": "Utilisateur inconnu",
+      "connectedTo": "Connecté à {{type}} sur {{server}}",
+      "noServer": "aucun serveur"
+    },
+    "links": {
+      "cantOpen": "Impossible d'ouvrir {{url}}"
+    },
+    "server": {
+      "title": "Serveur",
+      "serverUrl": "URL du serveur",
+      "username": "Nom d'utilisateur",
+      "notSet": "Non défini",
+      "connectivity": "Connectivité",
+      "searchScopeHelp": "Choisissez la source des résultats de recherche",
+      "searchScope": {
+        "client": "Sur l'appareil",
+        "clientDescription": "Rechercher uniquement dans la bibliothèque locale",
+        "server": "Serveur",
+        "serverDescription": "Utiliser la recherche du serveur à la place"
+      }
+    },
+    "appearance": {
+      "title": "Apparence",
+      "theme": {
+        "title": "Thème",
+        "subtitle": "Clair, sombre ou système"
+      },
+      "color": {
+        "info": "Personnalisez la couleur principale de votre application",
+        "change": "Modifier la couleur du thème"
+      },
+      "playingBarAction": {
+        "info": "Choisissez l'action affichée dans la barre de lecture",
+        "actions": {
+          "none": "Aucune",
+          "skip": "Suivant",
+          "favorite": "Favori",
+          "randomAlbum": "Aléatoire",
+          "addToPlaylist": "Ajouter"
+        }
+      },
+      "columns": {
+        "info": "Définissez le nombre de colonnes en mode grille",
+        "count": "{{count}} colonnes"
+      },
+      "language": {
+        "title": "Langue",
+        "subtitle": "Langue de l'application",
+        "english": "Anglais",
+        "japanese": "Japonais",
+        "french": "Français",
+        "chinese": "Chinois"
+      },
+      "showQualityBadge": "Afficher le badge qualité",
+      "showQualityBadgeSubtext": "Affiche le format audio et le débit binaire dans le lecteur."
+    },
+    "library": {
+      "title": "Bibliothèque",
+      "librarySelect": {
+        "info": "Choisissez la bibliothèque musicale à utiliser",
+        "all": "Toutes les bibliothèques"
+      },
+      "discovery": {
+        "title": "Découverte",
+        "info": "Comment la découverte suggère des artistes et albums de votre bibliothèque.",
+        "about": "À propos de la découverte"
+      },
+      "stats": {
+        "title": "Bibliothèque",
+        "neverSynced": "Jamais synchronisé",
+        "justNow": "À l'instant",
+        "minsAgo": "Il y a {{count}} min",
+        "minsAgo_plural": "Il y a {{count}} min",
+        "hoursAgo": "Il y a {{count}} h",
+        "hoursAgo_plural": "Il y a {{count}} h",
+        "daysAgo": "Il y a {{count}} jour",
+        "daysAgo_plural": "Il y a {{count}} jours",
+        "lastSynced": "Dernière synchro",
+        "syncOnAppStart": "Synchroniser au démarrage"
+      },
+      "offlineChanges": {
+        "title": "Modifications hors ligne en attente",
+        "subtitle": "{{count}} modification sera synchronisée en ligne",
+        "subtitle_plural": "{{count}} modifications seront synchronisées en ligne",
+        "failedSubtitle": "{{count}} modification nécessite votre attention avant synchronisation",
+        "failedSubtitle_plural": "{{count}} modifications nécessitent votre attention avant synchronisation",
+        "retry": "Réessayer",
+        "discard": "Ignorer",
+        "discardTitle": "Ignorer les modifications hors ligne ?",
+        "discardBody": "Cela supprimera les modifications en attente pour le serveur actuel. Votre bibliothèque locale sera actualisée lors de la prochaine synchronisation."
+      },
+      "downloads": {
+        "title": "Téléchargements",
+        "detailsTitle": "Détails des téléchargements",
+        "moreInfo": "Plus d'infos",
+        "clearTitle": "Effacer les téléchargements ?",
+        "clearBody": "Cela supprimera tous les morceaux téléchargés de votre appareil.",
+        "clearBodyForProvider": "Cela supprimera les téléchargements du serveur actuel uniquement.",
+        "clearBodyProviderNamed": "Cela supprimera uniquement les téléchargements de {{provider}}.",
+        "clearFailedTitle": "Impossible d'effacer les téléchargements",
+        "clearFailedBody": "Une erreur est survenue lors de la suppression des fichiers locaux.",
+        "removeTitle": "Supprimer cet élément téléchargé ?",
+        "removeBody": "Cela supprimera les fichiers téléchargés de \"{{title}}\" de votre appareil.",
+        "removeFailedTitle": "Impossible de supprimer le téléchargement",
+        "removeFailedBody": "Une erreur est survenue lors de la suppression des fichiers locaux.",
+        "provider": {
+          "navidrome": "Navidrome",
+          "jellyfin": "Jellyfin",
+          "emby": "Emby",
+          "unknown": "Source inconnue"
+        },
+        "status": {
+          "downloaded": "Téléchargé",
+          "downloading": "En cours",
+          "incomplete": "Incomplet",
+          "pending": "En attente",
+          "paused": "En pause",
+          "completed": "Terminé",
+          "failed": "Échoué",
+          "cancelled": "Annulé"
+        },
+        "type": {
+          "album": "Album",
+          "playlist": "Liste de lecture"
+        },
+        "sizeLabel": "Taille du téléchargement",
+        "availableLabel": "Espace disponible",
+        "unknownTrack": "Piste inconnue",
+        "unknownArtist": "Artiste inconnu",
+        "table": {
+          "item": "Élément",
+          "status": "Statut",
+          "progress": "Progression",
+          "downloaded": "Téléchargé",
+          "size": "Taille",
+          "updated": "Mis à jour",
+          "error": "Erreur",
+          "empty": "Aucun élément téléchargé pour le moment.",
+          "tracks": "Pistes",
+          "playlists": "Listes de lecture"
+        },
+        "offlineNote": "Ces morceaux sont stockés localement pour une lecture hors ligne."
+      },
+      "audioQuality": {
+        "info": "Définissez votre qualité audio préférée pour les téléchargements hors ligne.",
+        "label": "Qualité audio : {{value}}",
+        "options": {
+          "low": "Faible (64 kbps)",
+          "medium": "Moyenne (128 kbps)",
+          "high": "Élevée (192 kbps)",
+          "original": "Originale (sans compression)"
+        }
+      }
+    },
+    "player": {
+      "title": "Lecture",
+      "nothingPlaying": "Aucune lecture en cours",
+      "unknownArtist": "—",
+      "equalizer": {
+        "title": "Égaliseur",
+        "reset": "Réinitialiser",
+        "presets": "Préréglages"
+      },
+      "streamingQuality": {
+        "wifi": "Qualité WiFi",
+        "cellular": "Qualité cellulaire",
+        "caption": "Original diffuse en audio sans perte si votre serveur le prend en charge. Recommandé uniquement en WiFi.",
+        "options": {
+          "low": "Faible · 128kbps",
+          "medium": "Moyenne · 192kbps",
+          "high": "Élevée · 320kbps",
+          "original": "Original (sans perte)"
+        }
+      },
+      "opusCodec": "Codec Opus",
+      "opusCodecSubtext": "Meilleure qualité que le MP3 au même débit. Nettement meilleur aux débits bas."
+    },
+    "listenBrainz": {
+      "title": "ListenBrainz",
+      "username": "Nom d'utilisateur",
+      "userToken": "Jeton utilisateur",
+      "usernamePlaceholder": "Nom d'utilisateur ListenBrainz",
+      "tokenPlaceholder": "Jeton utilisateur ListenBrainz",
+      "connectivity": "Connectivité",
+      "helperText": "ListenBrainz est utilisé pour le scrobbling et les mises à jour de lecture en cours. Aucune donnée d'écoute n'est envoyée sans votre permission.",
+      "disconnect": "Déconnecter",
+      "missingCredentials": "Saisissez d'abord le nom d'utilisateur et le jeton.",
+      "connectionSuccessful": "Connexion à ListenBrainz réussie.",
+      "connectionFailed": "Échec de la connexion.",
+      "connectFailed": "Échec de la connexion à ListenBrainz.",
+      "disconnected": "Déconnecté de ListenBrainz."
+    },
+    "downloaders": {
+      "title": "Téléchargements",
+      "connected": "Connecté",
+      "notConnected": "Non connecté",
+      "serverUrl": "URL du serveur",
+      "apiKey": "Clé API",
+      "apiKeyPlaceholder": "Clé API",
+      "connectivity": "Connectivité",
+      "queue": "File d'attente",
+      "emptyQueue": "Aucun téléchargement en cours.",
+      "disconnect": "Déconnecter",
+      "downloadComplete": "Téléchargement terminé !",
+      "unknown": "Inconnu",
+      "unknownAlbum": "Album inconnu",
+      "tracks": "piste",
+      "tracks_plural": "pistes",
+      "files": "fichier",
+      "files_plural": "fichiers",
+      "serverUrlPlaceholder": {
+        "lidarr": "http://node:8686",
+        "slskd": "http://slskd:5030"
+      },
+      "lidarr": {
+        "title": "Lidarr",
+        "connectionFailed": "Échec de la connexion à Lidarr",
+        "disconnected": "Déconnecté de Lidarr."
+      },
+      "slskd": {
+        "title": "slskd",
+        "connectionFailed": "Échec de la connexion à slskd",
+        "disconnected": "Déconnecté de slskd."
+      }
+    },
+    "integrations": {
+      "enabled": "Activé",
+      "disabled": "Désactivé"
+    },
+    "deezer": {
+      "discovery": "Découverte",
+      "discoveryDescription": "Classements et recommandations Deezer sur l'écran explorer.",
+      "search": "Recherche",
+      "searchDescription": "Inclure les résultats Deezer dans la recherche.",
+      "externalScreens": "Écrans externes",
+      "externalScreensDescription": "Afficher les pages d'album et d'artiste externes depuis Deezer."
+    },
+    "scrobbling": {
+      "title": "Scrobbling",
+      "server": "Serveur",
+      "scrobble": "Scrobble",
+      "nowPlaying": "En cours de lecture",
+      "notConnected": "Non connecté",
+      "configure": "Configurer",
+      "scrobbleDescription": "Enregistrer les titres écoutés sur votre profil.",
+      "nowPlayingDescription": "Afficher ce que vous écoutez en temps réel.",
+      "markAsPlayed": "Marquer comme écouté",
+      "markAsPlayedDescription": "Mettre à jour le nombre de lectures sur votre serveur."
+    },
+    "discovery": {
+      "title": "Découverte",
+      "sections": {
+        "about": {
+          "title": "Découverte",
+          "body": "L'onglet Découverte suggère des artistes et des albums en fonction de votre bibliothèque. Vous y trouverez des artistes similaires, des albums susceptibles de vous plaire et les nouvelles sorties de ces artistes."
+        },
+        "how": {
+          "title": "Comment ça marche",
+          "body": "Nous utilisons les artistes de votre bibliothèque pour trouver des artistes similaires via Rawarr/LastFM, puis nous résolvons les artistes et albums via Deezer pour Explorer."
+        },
+        "sync": {
+          "title": "Synchronisation et actualisation",
+          "body": "La découverte se synchronise lorsque vous vous connectez à un serveur. Actualiser dans Découverte ne fait que mélanger le contenu déjà chargé sans récupérer de nouvelles données. En cas d'échec, un message s'affiche et vous pouvez appuyer sur « Réessayer »."
+        }
+      }
+    }
+  },
+  "common": {
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "next": "Suivant",
+    "done": "Terminé",
+    "back": "Retour",
+    "play": "Lire",
+    "shuffle": "Aléatoire",
+    "album": "album",
+    "albums": "albums",
+    "song": "morceau",
+    "songs": "morceaux",
+    "artist": "Artiste",
+    "playlist": "Liste de lecture",
+    "offline": {
+      "downloadRequired": "Téléchargez cette piste pour la lire en mode hors ligne.",
+      "noDownloadedTracks": "Aucune piste téléchargée n'est disponible pour cette action.",
+      "similarUnavailable": "Les titres similaires ne sont pas disponibles en mode hors ligne.",
+      "noConnection": "Pas de connexion internet",
+      "syncedChanges": "Modifications hors ligne synchronisées",
+      "syncQueuedChangesFailed": "Certaines modifications hors ligne n'ont pas pu être synchronisées"
+    },
+    "oneSecond": "Un instant.",
+    "playingSimilar": "Lecture de musique similaire",
+    "songDetailsError": "Impossible de charger les détails de la chanson",
+    "syncFailed": "Échec de la synchronisation. Vérifiez votre connexion.",
+    "libraryLoadFailed": "Échec du chargement. Vérifiez votre connexion.",
+    "error": {
+      "unexpected": "Une erreur inattendue s'est produite",
+      "details": "Erreur : {{name}} {{message}}",
+      "restart": "Redémarrer"
+    }
+  },
+  "onboarding": {
+    "home": {
+      "subtitle": "Votre bibliothèque musicale personnelle. Diffusez depuis votre propre serveur, où que vous soyez.",
+      "getStarted": "Commencer",
+      "terms": "En continuant, vous confirmez avoir lu et accepté nos Conditions d'utilisation et notre Politique de confidentialité"
+    },
+    "servers": {
+      "title": "Vos serveurs",
+      "subtitle": "Choisissez un serveur pour continuer ou ajoutez-en un nouveau.",
+      "empty": "Aucun serveur ajouté pour le moment.",
+      "add": "Ajouter un serveur",
+      "active": "ACTIF",
+      "deleteTitle": "Supprimer le serveur",
+      "deleteBody": "Supprimer {{server}} ?",
+      "switchClearTitle": "Changer de serveur et effacer les téléchargements ?",
+      "switchClearBody": "Le changement de serveur effacera les téléchargements locaux pour éviter les chevauchements.",
+      "switchClearConfirm": "Changer et effacer",
+      "switchClearFailedTitle": "Impossible de changer de serveur",
+      "switchClearFailedBody": "Échec de l'effacement des téléchargements avant le changement de serveur."
+    },
+    "connect": {
+      "title": "Choisissez un type de serveur",
+      "subtitle": "Sélectionnez le type de serveur auquel vous souhaitez vous connecter.",
+      "selectTypeFirst": "Sélectionnez d'abord un type de serveur.",
+      "demoUnavailableProvider": "Démo non disponible pour ce fournisseur.",
+      "connectError": "Une erreur s'est produite lors de la connexion.",
+      "useDemo": "Utiliser la démo {{provider}}",
+      "demoUnavailable": "Démo non disponible",
+      "demoFailed": "Échec de la connexion à la démo",
+      "providerDescription": {
+        "navidrome": "Un serveur musical léger et auto-hébergé.",
+        "jellyfin": "Un serveur multimédia complet pour la musique, les films et les séries.",
+        "emby": "Un serveur multimédia personnel pour la musique, les films et les séries."
+      }
+    },
+    "address": {
+      "title": "Adresse du serveur",
+      "subtitle": "Saisissez l'adresse de votre serveur.",
+      "enterUrl": "Veuillez saisir une adresse de serveur.",
+      "hint": "Ajoutez un port si nécessaire, ex. : votre-serveur.com:4533",
+      "schemeTitle": "Protocole",
+      "httpsDesc": "Chiffré (recommandé)",
+      "httpDesc": "Non chiffré"
+    },
+    "credentials": {
+      "title": "Saisissez vos identifiants",
+      "subtitle": "Saisissez votre nom d'utilisateur et votre mot de passe pour continuer.",
+      "usernamePlaceholder": "Nom d'utilisateur",
+      "passwordPlaceholder": "Mot de passe",
+      "libraryTitle": "Choisir la bibliothèque",
+      "librarySubtitle": "Sélectionnez la bibliothèque Navidrome à utiliser pour ce serveur.",
+      "confirmLibrary": "Utiliser la bibliothèque",
+      "selectLibraryRequired": "Veuillez sélectionner une bibliothèque pour continuer.",
+      "missingCredentials": "Veuillez saisir le nom d'utilisateur et le mot de passe.",
+      "authFailed": "Échec de l'authentification.",
+      "apiNotResponding": "Serveur connecté, mais l'API ne répond pas.",
+      "connectError": "Une erreur s'est produite lors de la connexion."
+    }
+  },
+  "library": {
+    "title": "Bibliothèque",
+    "shuffle": {
+      "all": "Tout mélanger",
+      "favorites": "Mélanger les favoris",
+      "downloaded": "Mélanger les téléchargements"
+    }
+  },
+  "home": {
+    "title": "Accueil",
+    "filters": {
+      "all": "Tout",
+      "albums": "Albums",
+      "artists": "Artistes",
+      "playlists": "Listes de lecture",
+      "tracks": "Pistes",
+      "downloaded": "Téléchargés",
+      "genres": "Genres"
+    },
+    "sort": {
+      "alphabetical": "Alphabétique",
+      "mostRecent": "Plus récents",
+      "mostPlayed": "Plus écoutés",
+      "releaseYear": "Année de sortie",
+      "recentlyAdded": "Récemment ajouté",
+      "lastModified": "Dernière modification"
+    },
+    "sortSheet": {
+      "title": "Trier par"
+    },
+    "empty": "Aucun contenu disponible.",
+    "account": {
+      "settings": "Paramètres",
+      "triggerScan": "Lancer l'analyse",
+      "signOut": "Se déconnecter",
+      "scanTriggered": "Analyse lancée.",
+      "scanFailed": "Impossible de lancer l'analyse.",
+      "signOutFailed": "Impossible de se déconnecter correctement.",
+      "downloadCleanupFailed": "Impossible d'effacer les téléchargements pendant la déconnexion."
+    }
+  },
+  "search": {
+    "placeholder": "Rechercher de la musique, des artistes ou des listes de lecture...",
+    "noResults": "Aucun résultat trouvé",
+    "chips": {
+      "local": "Local",
+      "external": "Externe",
+      "song": "Morceau",
+      "album": "Album",
+      "artist": "Artiste",
+      "playlist": "Playlist",
+      "deezer": "Deezer"
+    }
+  },
+  "media": {
+    "albumNotFound": "Album introuvable",
+    "artistNotFound": "Artiste introuvable.",
+    "playlistNotFound": "Liste de lecture introuvable."
+  },
+  "artist": {
+    "sections": {
+      "albums": "Albums",
+      "singles": "Singles et EP",
+      "topTracks": "Titres populaires",
+      "similarArtists": "Artistes similaires"
+    }
+  },
+  "explore": {
+    "sections": {
+      "dial": "Sélection",
+      "quickPicks": "Sélection rapide",
+      "recentlyPlayed": "Écoutés récemment",
+      "recentlyAdded": "Ajoutés récemment",
+      "favoriteAlbums": "Albums favoris",
+      "randomAlbums": "Albums au hasard",
+      "mostPlayed": "Les plus écoutés",
+      "newReleases": "Nouvelles sorties",
+      "becauseYouListened": "Dans le style de {{artist}}",
+      "becauseYouListenedLabel": "Dans le style de",
+      "charts": "Tendances du moment",
+      "genre": "Plus de {{genre}}",
+      "albumsForYou": "Albums pour vous",
+      "artistsForYou": "Artistes pour vous"
+    },
+    "empty": {
+      "recentSongs": "Écoutez quelque chose pour le voir ici",
+      "quickPicks": "Écoutez des chansons pour voir votre sélection rapide",
+      "recentlyPlayed": "Écoutez des albums pour les voir ici",
+      "recentlyAdded": "Aucun album dans votre bibliothèque pour le moment",
+      "favoriteAlbums": "Marquez des morceaux comme favoris pour ajouter des albums ici",
+      "randomAlbums": "Aucun album dans votre bibliothèque pour le moment",
+      "mostPlayed": "Écoutez des albums pour les voir ici",
+      "albumsForYou": "Découverte des albums...",
+      "artistsForYou": "Découverte des artistes..."
+    }
+  },
+  "playing": {
+    "queue": {
+      "title": "File d'attente",
+      "playingFromAlbum": "Lecture depuis {{album}}",
+      "playingFromQueue": "Lecture depuis la file d'attente"
+    },
+    "lyrics": {
+      "title": "Paroles"
+    },
+    "aboutArtist": {
+      "header": "Artiste",
+      "subtext": "Artiste"
+    },
+    "bar": {
+      "noSong": "Aucun morceau en lecture",
+      "selectTrack": "Sélectionnez une piste pour commencer"
+    },
+    "actions": {
+      "addedToFavorites": "{{title}} ajouté aux favoris.",
+      "addedToFavoritesOffline": "{{title}} ajouté aux favoris hors ligne.",
+      "removedFromFavorites": "{{title}} retiré des favoris.",
+      "removedFromFavoritesOffline": "{{title}} retiré des favoris hors ligne.",
+      "updateFavoritesFailed": "Échec de la mise à jour des favoris.",
+      "randomAlbum": "Lecture d'un album aléatoire : {{title}}",
+      "loadAlbumFailed": "Échec du chargement de l'album."
+    }
+  },
+  "playlist": {
+    "favoritesTitle": "Favoris",
+    "subtext": "Liste de lecture • {{count}} morceau",
+    "subtext_plural": "Liste de lecture • {{count}} morceaux",
+    "empty": "Cette liste de lecture n'a pas encore de morceaux.",
+    "recommended": {
+      "title": "Recommandé",
+      "local": "De votre bibliothèque",
+      "external": "Découvrir",
+      "deezerTitle": "Via Deezer",
+      "added": "Ajouté à la liste de lecture",
+      "addFailed": "Impossible d'ajouter la chanson",
+      "externalEmpty": "Rien à découvrir pour l'instant",
+      "refresh": "Actualiser"
+    }
+  },
+  "playlistList": {
+    "title": "Ajouter à une liste de lecture",
+    "searchPlaceholder": "Rechercher des listes de lecture",
+    "newPlaceholder": "Nom de la nouvelle liste de lecture",
+    "updated": "Listes de lecture mises à jour",
+    "updatedOffline": "Listes de lecture enregistrées hors ligne. Elles seront synchronisées en ligne.",
+    "createFailed": "Impossible de créer la liste de lecture",
+    "updateFailed": "Impossible de mettre à jour les listes de lecture"
+  },
+  "songOptions": {
+    "unknownArtist": "Inconnu",
+    "actions": {
+      "play": "Lire",
+      "favorite": "Ajouter aux favoris",
+      "unfavorite": "Retirer des favoris",
+      "addToQueue": "Ajouter à la file d'attente",
+      "addToEnd": "Ajouter à la fin",
+      "addToPlaylist": "Ajouter à une liste de lecture",
+      "goToAlbum": "Aller à l'album",
+      "instantMix": "Mix instantané"
+    },
+    "sections": {
+      "media": "Média",
+      "track": "Piste",
+      "dates": "Dates",
+      "other": "Autre"
+    },
+    "media": {
+      "duration": "Durée",
+      "plays": "Lectures",
+      "bitrate": "Débit binaire",
+      "sampleRate": "Fréquence d'échantillonnage",
+      "bitsPerSample": "Bits par échantillon",
+      "format": "Format",
+      "kbps": "{{value}} kbps",
+      "hz": "{{value}} Hz"
+    },
+    "track": {
+      "disc": "Disque",
+      "track": "Piste"
+    },
+    "dates": {
+      "released": "Sorti le",
+      "added": "Date d'ajout"
+    },
+    "other": {
+      "bpm": "BPM",
+      "genres": "Genres",
+      "filePath": "Chemin du fichier"
+    },
+    "toasts": {
+      "removedFromFavorites": "{{title}} retiré des favoris.",
+      "removedFromFavoritesOffline": "{{title}} retiré des favoris hors ligne.",
+      "addedToFavorites": "{{title}} ajouté aux favoris.",
+      "addedToFavoritesOffline": "{{title}} ajouté aux favoris hors ligne.",
+      "updateFavoritesFailed": "Échec de la mise à jour des favoris.",
+      "nothingPlaying": "Aucune lecture en cours.",
+      "alreadyPlaying": "{{title}} est déjà en cours de lecture.",
+      "addedToQueue": "{{title}} ajouté à la file d'attente.",
+      "addToQueueFailed": "Échec de l'ajout à la file d'attente.",
+      "playNext": "{{title}} sera lu en suivant.",
+      "playNextFailed": "Échec de la mise en file d'attente.",
+      "instantMixFailed": "Échec du lancement du mix instantané"
+    }
+  },
+  "externalAlbum": {
+    "menu": {
+      "title": "Album externe",
+      "downloadToServer": "Télécharger sur le serveur",
+      "inLibrary": "Dans la bibliothèque",
+      "downloading": "Téléchargement vers le serveur… {{progress}}%"
+    },
+    "serverStatus": {
+      "onServer": "Dans la bibliothèque",
+      "downloadingToServer": "Téléchargement vers le serveur · {{progress}}%"
+    },
+    "download": {
+      "noDownloader": "Aucun gestionnaire de téléchargement actif connecté.",
+      "addedToLidarr": "Album ajouté à Lidarr !",
+      "addedToSlskd": "Album ajouté à la file d'attente slskd !",
+      "failed": "Échec du téléchargement.",
+      "startFailed": "Échec du démarrage du téléchargement.",
+      "chooseService": "Choisir un service",
+      "lidarrDesc": "Gestionnaire de collection musicale",
+      "slskdDesc": "Partage de fichiers pair à pair"
+    },
+    "header": {
+      "songs": "{{count}} morceau",
+      "songs_plural": "{{count}} morceaux",
+      "externalMetadata": "Métadonnées externes"
+    },
+    "info": {
+      "title": "À propos des albums externes",
+      "body": "Les métadonnées de l'album et les aperçus des pistes sont fournis par Deezer — des extraits de 30 secondes conformément aux conditions d'utilisation de l'API Deezer."
+    }
+  },
+  "albumOptions": {
+    "actions": {
+      "play": "Lire",
+      "shuffle": "Lecture aléatoire",
+      "addToNext": "Lire ensuite",
+      "addToEnd": "Ajouter à la fin",
+      "shuffleToQueue": "Ajouter aléatoirement à la file d'attente",
+      "goToAlbum": "Aller à l'album",
+      "goToExternalAlbum": "Aller à l'album externe",
+      "goToExternalArtist": "Aller à l'artiste externe",
+      "viewExternal": "Voir externe",
+      "download": "Télécharger",
+      "downloading": "Téléchargement…",
+      "downloaded": "Téléchargé"
+    },
+    "toasts": {
+      "addedNext": "Lecture de {{title}} ensuite",
+      "addedToEnd": "{{title}} ajouté à la file",
+      "shuffledToQueue": "{{title}} ajouté en ordre aléatoire"
+    },
+    "sections": {
+      "albumInfo": "Informations sur l'album"
+    },
+    "info": {
+      "artist": "Artiste",
+      "year": "Année",
+      "genres": "Genres",
+      "songs": "Morceaux",
+      "plays": "Lectures",
+      "unknown": "—"
+    }
+  },
+  "playlistOptions": {
+    "playlistLabel": "Liste de lecture",
+    "actions": {
+      "play": "Lire",
+      "shuffle": "Lecture aléatoire",
+      "addToQueue": "Ajouter à la file d'attente",
+      "shuffleToQueue": "Ajouter aléatoirement à la file d'attente",
+      "goToPlaylist": "Aller à la liste de lecture",
+      "download": "Télécharger",
+      "downloading": "Téléchargement…",
+      "downloaded": "Téléchargé",
+      "delete": "Supprimer la liste de lecture"
+    },
+    "sections": {
+      "info": "Informations sur la liste de lecture"
+    },
+    "info": {
+      "lastChanged": "Dernière modification",
+      "created": "Créée le",
+      "songs": "Morceaux"
+    },
+    "delete": {
+      "title": "Supprimer la liste de lecture",
+      "body": "« {{title}} » sera définitivement supprimée. Cette action est irréversible."
+    },
+    "toasts": {
+      "deleted": "Liste de lecture supprimée",
+      "deleteFailed": "Impossible de supprimer la liste de lecture"
+    }
+  },
+  "artistOptions": {
+    "artistLabel": "Artiste",
+    "actions": {
+      "play": "Lire",
+      "shuffle": "Lecture aléatoire",
+      "addToQueue": "Ajouter à la file d'attente",
+      "shuffleToQueue": "Ajouter aléatoirement à la file d'attente",
+      "download": "Télécharger",
+      "downloading": "Téléchargement…",
+      "downloaded": "Téléchargé",
+      "goToArtist": "Aller à l'artiste",
+      "goToExternalArtist": "Aller à l'artiste externe",
+      "viewExternal": "Voir externe"
+    },
+    "sections": {
+      "info": "Informations sur l'artiste"
+    },
+    "info": {
+      "albums": "Albums",
+      "plays": "Lectures"
+    },
+    "downloadAllFailed": "Certains albums n'ont pas pu être téléchargés."
+  },
+  "external": {
+    "notFound": "Introuvable dans les sources connectées."
+  }
+}

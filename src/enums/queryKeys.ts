@@ -1,0 +1,31 @@
+/**
+ * An enum of all the keys of query functions.
+ */
+export enum QueryKeys {
+	Album = 'album',
+	Albums = 'albums',
+	Artist = 'artist',
+	Artists = 'artists',
+	Playlist = 'playlist',
+	Playlists = 'playlists',
+	Song = 'song',
+	Tracks = 'tracks',
+	Starred = 'starred',
+	RecentSongs = 'recent-songs',
+	Genres = 'genres',
+	ExternalAlbum = 'external-album',
+	ExternalArtist = 'external-artist-v2',
+	ExploreSimilarArtists = 'explore-similar-artists',
+	ExploreSimilarArtistAlbums = 'explore-similar-artist-albums',
+	ExploreSimilarContent = 'explore-similar-content',
+	ExploreGenreRow = 'explore-genre-row',
+	ExternalAlbumPreviews = 'external-album-previews',
+	LidarrQueue = 'lidarr-queue',
+	SlskdQueue = 'slskd-queue',
+	RecommendedLocalSongs = 'recommended-local-songs',
+	RecommendedExternalSongs = 'recommended-external-songs',
+	ExploreBecauseYouListened = 'explore-because-you-listened',
+	ExploreDeezerCharts = 'explore-deezer-charts',
+	ExploreTopArtists = 'explore-top-artists',
+	LocalArtistTopTracks = 'local-artist-top-tracks',
+}
